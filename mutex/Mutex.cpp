@@ -14,7 +14,7 @@
 #include "Mutex.h"
 #include "../thread/Thread.h"
 
-#if 1
+#if 0
 #define TEST_MUTEX_MAIN
 #endif
 
