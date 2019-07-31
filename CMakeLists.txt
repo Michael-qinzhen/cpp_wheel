@@ -11,6 +11,7 @@ add_executable(cpp_wheel main.cpp
         condition/Condition.cpp condition/Condition.h
         atomic/Atomic.cpp atomic/Atomic.h
         thread/Thread.cpp thread/Thread.h
-        blocking_queue/BlockingQueue.cpp blocking_queue/BlockingQueue.h)
+        blocking_queue/BlockingQueue.cpp blocking_queue/BlockingQueue.h
+        thread_pool/ThreadPool.cpp thread_pool/ThreadPool.h)
 
 target_link_libraries(cpp_wheel pthread)
