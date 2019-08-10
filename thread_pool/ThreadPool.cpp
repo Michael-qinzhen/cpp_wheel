@@ -145,7 +145,7 @@ void ThreadPool::runInThread()
 
 /* ————————————以下为测试代码———————————— */
 
-#if 1
+#if 0
 #define TEST_THREADPOOL_MAIN
 #endif
 

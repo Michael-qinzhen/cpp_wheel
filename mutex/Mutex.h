@@ -89,4 +89,9 @@ private:
     // 如果是普通的成员变量，比如MutexLock mutex_则起不到保护临界区的作用了，因为此时mutex_的作用范围仅限于MutexLockGuard类中
 };
 
+// Prevent misuse like:
+// MutexLockGuard(mutex_);
+// A tempory object doesn't hold the lock for long!
+#define MutexLockGuard(x) error "Missing guard object name"
+
 #endif //CPP_WHEEL_MUTEX_H
